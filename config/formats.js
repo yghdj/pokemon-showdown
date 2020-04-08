@@ -46,6 +46,15 @@ let Formats = [
 		mod: 'gen8',
 		ruleset: ['Standard', 'Dynamax Clause'],
 		banlist: ['Uber', 'Arena Trap', 'Moody', 'Shadow Tag', 'Baton Pass'],
+		searchShow: false,
+		challengeShow: false,
+	},
+	{
+		name: "[Gen 8] OU (suspect test)",
+
+		mod: 'gen8',
+		rated: "[Gen 8] OU",
+		ruleset: ['[Gen 8] OU'],
 		unbanlist: ['Melmetal'],
 		onBegin() {
 			if (this.rated && this.format.id === 'gen8ou') this.add('html', `<div class="broadcast-red"><strong>OU is currently suspecting Melmetal! For information on how to participate check out the <a href="https://www.smogon.com/forums/threads/3662190/">suspect thread</a>.</strong></div>`);
@@ -79,7 +88,7 @@ let Formats = [
 		],
 
 		mod: 'gen8',
-		ruleset: ['[Gen 8] OU', '-Melmetal'],
+		ruleset: ['[Gen 8] OU'],
 		banlist: ['OU', 'UUBL'],
 	},
 	{
@@ -208,7 +217,7 @@ let Formats = [
 		],
 
 		mod: 'gen8',
-		ruleset: ['[Gen 8] OU', '-Melmetal', '+CAP'],
+		ruleset: ['[Gen 8] OU', '+CAP'],
 		banlist: ['Crucibelle-Mega'],
 	},
 	{
@@ -735,7 +744,7 @@ let Formats = [
 
 		mod: 'gen8',
 		searchShow: false,
-		ruleset: ['[Gen 8] OU', '-Melmetal'],
+		ruleset: ['[Gen 8] OU'],
 		banlist: ['Damp Rock', 'Heat Rock'],
 		onModifySpecies(species, target, source, effect) {
 			if (!species.baseStats) return false;
