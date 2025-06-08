@@ -3,7 +3,8 @@
 
 export const Formats: import('../sim/dex-formats').FormatList = [
 	{
-		section: "Pojemo",
+		section: "Pojemo Formats",
+		column: 1,
 	},
 	{
 		name: "[Gen 9] Pojemo OU",
