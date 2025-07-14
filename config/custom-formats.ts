@@ -9,7 +9,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] Pojemo OU",
 		desc: `Mechanics and Pok&eacute;mon sets modifiedd by the NDPS group chat.`,
-		mod: 'pojemo',
+		mod: 'gen9pojemo',
 		ruleset: ['Standard'],
 		rated: false
 	},
